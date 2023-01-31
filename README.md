@@ -4,7 +4,7 @@ Hey there!👋
 I’m Sascha, yet another web developer based in Saarbrücken, Germany.
 
 I started building websites back in 2012 and consider myself a
-professional since 2015. I spent my first years building WordPress
+professional since 2015. I've spent my first years building WordPress
 sites, today i work mostly on the JAM Stack (I still like WordPress 😅).
 I also enjoy discovering the Cloud, in particular with AWS.
 
