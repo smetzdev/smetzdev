@@ -12,6 +12,7 @@
     "format": "prettier -w --plugin-search-dir=. ."
   },
   "dependencies": {
+    "@astrojs/image": "^0.13.1",
     "@astrojs/tailwind": "^3.0.1",
     "astro": "^2.0.4",
     "tailwindcss": "^3.0.24"
