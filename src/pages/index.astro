@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { Image } from "@astrojs/image/components"
+import smetzDevImage from "../assets/smetzdev-casual.jpg"
+import { Social } from "../components/Social"
+import UnderConstruction from "../components/UnderConstruction.astro"
+---
+
+<Layout title="Hello @smetz.dev">
+  <main class="h-screen flex flex-col justify-center max-w-2xl mx-auto p-8">
+    <header>
+      <Image
+        width={160}
+        height={160}
+        src={smetzDevImage}
+        class="rounded-full h-20 w-20"
+        alt="Sascha Metz in casual look"
+      />
+      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl mt-6">
+        Web Developer, JAM Stack Guy, Cloud Enthusiast.
+      </h1>
+      <div class="mt-6 text-base text-gray-400">
+        <p>
+          Hey there!👋
+          <br />
+          I’m Sascha, yet another web developer based in Saarbrücken, Germany.
+        </p>
+        <p class="mt-4">
+          I started building websites back in 2012 and consider myself a
+          professional since 2015. I've spent my first years building WordPress
+          sites, today i work mostly on the JAM Stack (I still like WordPress
+          😅). I also enjoy discovering the Cloud, in particular with AWS.
+        </p>
+        <Social />
+        <UnderConstruction />
+      </div>
+    </header>
+  </main>
+</Layout>
