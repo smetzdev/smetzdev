@@ -11,12 +11,6 @@ I also enjoy discovering the Cloud, in particular with AWS.
 You can find me here (if you wanna):
 
 <div id="badges">
-  <a href="https://twitter.com/smetzdev">
-    <img src="https://img.shields.io/badge/Twitter-orange?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/>
-  </a>
-  <a href="https://www.instagram.com/smetzdev/">
-    <img src="https://img.shields.io/badge/Instagram-orange?style=for-the-badge&logo=youtube&logoColor=white" alt="Instagram"/>
-  </a>
   <a href="mailto:hello@smetz.dev">
     <img src="https://img.shields.io/badge/Mail-orange?style=for-the-badge&logo=gmail&logoColor=white" alt="Twitter Badge"/>
   </a>
