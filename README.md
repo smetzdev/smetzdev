@@ -1,7 +1,7 @@
-# Web Developer, JAM Stack Guy, Cloud Enthusiast.
+# Yet another Web Developer...
 
 Hey there!👋  
-I’m Sascha, yet another web developer based in Saarbrücken, Germany.
+I’m Sascha, based in Saarbrücken, Germany.
 
 I started building websites back in 2012 and consider myself a
 professional since 2015. I've spent my first years building WordPress
