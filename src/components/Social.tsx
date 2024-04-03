@@ -3,23 +3,11 @@ import {
   FaInstagram,
   FaGithub,
   FaEnvelope,
-} from "react-icons/fa/index.js"
+} from "react-icons/fa/index.js";
 
 export const Social = () => {
   return (
     <div className="flex mt-6 gap-6 text-xl">
-      <a target="_blank" rel="noreferrer" href="https://twitter.com/smetzdev">
-        <span className="sr-only">Go to Sascha's Twitter profile</span>
-        <FaTwitter />
-      </a>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://instagram.com/smetzdev/"
-      >
-        <span className="sr-only">Go to Sascha's Instagram profile</span>
-        <FaInstagram />
-      </a>
       <a
         target="_blank"
         rel="noreferrer"
@@ -37,5 +25,5 @@ export const Social = () => {
         <FaEnvelope />
       </a>
     </div>
-  )
-}
+  );
+};
