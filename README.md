@@ -1,12 +1,11 @@
 # Yet another Web Developer...
 
-Hey there!👋  
-I’m Sascha, based in Saarbrücken, Germany.
+Hey there!👋
+I’m Sascha, based in Saarbrücken, Germany .
 
-I started building websites back in 2012 and consider myself a
-professional since 2015. I've spent my first years building WordPress
-sites, today i work mostly on the JAM Stack (I still like WordPress 😅).
-I also enjoy discovering the Cloud, in particular with AWS.
+I started building websites back in 2012 and consider myself a professional since 2015. I've spent my first years building WordPress sites, today i work on many different projects, at the moment mainly at Gorilla.
+
+I am open for new projects, so if you need help with your website or want to build the next big thing feel free to Send me a message.
 
 You can find me here (if you wanna):
 
