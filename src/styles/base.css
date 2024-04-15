@@ -1,15 +1,15 @@
 @layer base {
   body {
-    @apply bg-gray-900;
-    @apply text-gray-50;
+    @apply bg-brawn-black;
+    @apply text-brawn-white;
   }
 
   a {
     @apply transition-colors;
-    @apply text-orange-500;
+    @apply text-brawn-yellow;
   }
 
   a:hover {
-    @apply text-orange-800;
+    @apply text-brawn-red;
   }
 }
