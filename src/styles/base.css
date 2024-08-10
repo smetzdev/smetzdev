@@ -1,9 +1,4 @@
 @layer base {
-  body {
-    @apply bg-brawn-black;
-    @apply text-brawn-white;
-  }
-
   a {
     @apply transition-colors;
     @apply text-brawn-yellow;

@@ -1,47 +1,23 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import { Image } from "@astrojs/image/components";
-import smetzDevImage from "../assets/smetzdev-casual.jpg";
-import { Social } from "../components/Social";
+import "../styles/tailwind.css";
+import Intro from "../components/Intro.astro";
 ---
 
-<Layout title="Hello @smetz.dev">
-  <main class="min-h-screen flex flex-col justify-center max-w-3xl mx-auto p-8">
-    <header class="flex items-center space-x-4 max-w-xl">
-      <Image
-        width={160}
-        height={160}
-        src={smetzDevImage}
-        class="rounded-full h-28 w-28 md:h-40 md:w-40"
-        alt="Sascha Metz in casual look"
-      />
-      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">
-        Yet another Webdeveloper
-      </h1>
-    </header>
-    <div class="mt-6 !leading-loose text-xl md:text-2xl">
-      <p>
-        Hey there!👋
-        <br />
-        I’m Sascha, based in
-        <a href="https://www.youtube.com/watch?v=Jkyg9GrvTeg" target="_blank">
-          Saarbrücken, Germany
-        </a>.
-      </p>
-      <p class="mt-4">
-        I started building websites back in 2012 and consider myself a
-        <a target="_blank" href="https://www.youtube.com/watch?v=HtTUsOKjWyQ">
-          professional
-        </a> since 2015. I've spent my first years building WordPress sites, today
-        i work on many different projects, at the moment mainly at
-        <a target="_blank" href="https://gorilla.build/">Gorilla</a>.
-      </p>
-      <p class="mt-4">
-        I am open for new projects, so if you need help with your website or
-        want to build the next big thing feel free to
-        <a href="mailto:hello@smetz.dev">Send me a message</a>.
-      </p>
-      <Social />
-    </div>
-  </main>
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Hello @smetz.dev</title>
+    <meta
+      name="description"
+      content="Sascha Metz - Webdeveloper based in Saarbrücken, Germany"
+    />
+  </head>
+  <body class="bg-brawn-black text-brawn-white">
+    <main class="max-w-3xl mx-auto p-8">
+      <Intro />
+    </main>
+  </body>
+</html>

@@ -1,9 +1,4 @@
-import {
-  FaTwitter,
-  FaInstagram,
-  FaGithub,
-  FaEnvelope,
-} from "react-icons/fa/index.js";
+import { FaGithub, FaEnvelope } from "react-icons/fa";
 
 export const Social = () => {
   return (
