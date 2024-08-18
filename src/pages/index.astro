@@ -2,6 +2,7 @@
 import "../styles/tailwind.css";
 import Intro from "../components/Intro.astro";
 import Projects from "../components/Projects.astro";
+import Notes from "../components/Notes.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -18,9 +19,10 @@ import Footer from "../components/Footer.astro";
     />
   </head>
   <body class="bg-brawn-black text-brawn-white">
-    <main class="max-w-4xl mx-auto p-8 pb-32">
+    <main class="max-w-4xl mx-auto p-8 pb-32 space-y-24">
       <Intro />
       <Projects />
+      <Notes />
     </main>
     <Footer />
   </body>
