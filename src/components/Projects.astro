@@ -18,7 +18,11 @@ const projects = await getCollection("projects");
           <CardTitle>{data.title}</CardTitle>
           <CardContent>{data.description}</CardContent>
           {data.designerName && (
-            <CardSecondaryLink title="Design:" slot="links">
+            <CardSecondaryLink
+              title="Design:"
+              slot="links"
+              href={data.designerLink}
+            >
               <span slot="label">Design:</span>
               {data.designerName}
             </CardSecondaryLink>
