@@ -1,0 +1,11 @@
+---
+const { company, job, yearsActive, companyLink } = Astro.props;
+---
+
+<li class="flex items-center justify-between py-8">
+  <div>
+    <h3 class="text-xl"><a target="_blank" href={companyLink}>{company}</a></h3>
+    <p class="mt-1 text-gray-400">{job}</p>
+  </div>
+  <span>{yearsActive}</span>
+</li>
