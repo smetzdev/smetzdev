@@ -1,5 +1,10 @@
 ---
 import Workplace from "./Workplace.astro";
+import browsaarLogo from "../assets/browsaar.svg";
+import raum3Logo from "../assets/r3.svg";
+import azuryLogo from "../assets/azury.svg";
+import gorillaLogo from "../assets/gorilla.svg";
+import hololuxLogo from "../assets/hlx.svg";
 ---
 
 <section x-show="$store.showCV">
@@ -15,30 +20,35 @@ import Workplace from "./Workplace.astro";
     <Workplace
       company="Gorilla"
       companyLink="https://gorilla.build/"
+      logo={gorillaLogo}
       job="Software Engineer"
-      yearsActive="2021 - present"
+      yearsActive="2021 - today"
     />
     <Workplace
       company="Holoux"
       companyLink="https://hololux.de/"
+      logo={hololuxLogo}
       job="Fullstack Web Developer"
-      yearsActive="2023 - present"
+      yearsActive="2023 - today"
     />
     <Workplace
       company="Browsaar"
       companyLink="https://browsaar.de"
+      logo={browsaarLogo}
       job="CEO, CTO & Founder 😎"
-      yearsActive="2023 - present"
+      yearsActive="2023 - today"
     />
     <Workplace
       company="Azury Living"
       companyLink="https://azury.de/"
+      logo={azuryLogo}
       job="Fullstack Web Developer"
       yearsActive="2020 - 2023"
     />
     <Workplace
       company="raum3"
       companyLink="https://raum3.de"
+      logo={raum3Logo}
       job="Web Developer"
       yearsActive="2015 - 2020"
     />
