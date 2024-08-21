@@ -18,9 +18,17 @@ import Footer from "../components/Footer.astro";
       name="description"
       content="Sascha Metz - Webdeveloper based in Saarbrücken, Germany"
     />
+    <script>
+      document.addEventListener("alpine:init", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const showCV = urlParams.has("showCV");
+        // @ts-ignore
+        Alpine.store("showCV", showCV);
+      });
+    </script>
   </head>
   <body class="bg-brawn-black text-brawn-white">
-    <main class="max-w-4xl mx-auto p-8 pb-32 space-y-24">
+    <main class="max-w-4xl mx-auto p-8 pb-32 space-y-24" x-data>
       <Intro />
       <Projects />
       <Notes />
