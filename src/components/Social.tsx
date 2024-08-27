@@ -1,4 +1,4 @@
-import { FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 export const Social = () => {
   return (
@@ -10,6 +10,14 @@ export const Social = () => {
       >
         <span className="sr-only">Go to Sascha's GitHub profile</span>
         <FaGithub />
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.linkedin.com/in/smetzdev/"
+      >
+        <span className="sr-only">Go to Sascha's LinkedIn profile</span>
+        <FaLinkedin />
       </a>
       <a
         target="_blank"
