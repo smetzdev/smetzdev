@@ -2,7 +2,7 @@ import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 export const Social = () => {
   return (
-    <div className="flex mt-6 gap-6 text-xl">
+    <div className="flex flex-1 gap-6 text-xl">
       <a
         target="_blank"
         rel="noreferrer"

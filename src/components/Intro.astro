@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import smetzDevImage from "../assets/smetzdev-casual.jpg";
+import ButtonLink from "../components/ButtonLink.astro";
 import { Social } from "./Social";
 ---
 
@@ -43,6 +44,9 @@ import { Social } from "./Social";
         Send me a message
       </a>.
     </p>
-    <Social />
+    <div class="flex items-center space-x-4 mt-12">
+      <ButtonLink href="https://cal.com/smetzdev">Book a call</ButtonLink>
+      <Social />
+    </div>
   </div>
 </section>
