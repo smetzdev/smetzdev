@@ -1,24 +1,29 @@
 ---
 import { Image } from "astro:assets";
-import smetzDevImage from "../assets/smetzdev-casual.jpg";
+import smetzDevImage from "../assets/smetzdev-colorful.png";
 import ButtonLink from "../components/ButtonLink.astro";
 import { Social } from "./Social";
 ---
 
 <section class="min-h-screen flex flex-col justify-center">
-  <header class="flex items-center space-x-4 max-w-xl">
+  <header
+    class="flex items-center space-x-2 max-w-xl -translate-x-4 md:-translate-x-6"
+  >
     <Image
-      width={160}
-      height={160}
+      width={280}
+      height={280}
       src={smetzDevImage}
-      class="rounded-xl h-24 w-24 md:h-36 md:w-36 shadow-xl shadow-brawn-yellow/15"
+      class="h-32 w-32 md:h-52 md:w-52"
       alt="Sascha Metz in casual look"
     />
-    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight sm:text-5xl">
+    <h1
+      class="text-3xl sm:text-4xl font-bold tracking-tight sm:text-5xl outline-1 outline-brawn-yellow"
+    >
       Yet another Webdeveloper
+      <span class="text-brawn-red">&trade;</span>
     </h1>
   </header>
-  <div class="mt-6 !leading-loose text-xl md:text-2xl">
+  <div class="mt-2 !leading-loose text-xl md:text-2xl">
     <p>
       Hey there!👋
       <br />
