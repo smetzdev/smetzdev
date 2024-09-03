@@ -1,0 +1,8 @@
+---
+import { twMerge } from "tailwind-merge";
+
+const { class: className } = Astro.props;
+const styles = twMerge("fancy-ass-label text-2xl md:text-4xl", className);
+---
+
+<h2 class={styles}><slot /></h2>
