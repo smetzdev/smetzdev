@@ -10,6 +10,7 @@
 
   body {
     background-image: url("../assets/grunge.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
