@@ -5,14 +5,16 @@ import raum3Logo from "../assets/r3.svg";
 import azuryLogo from "../assets/azury.svg";
 import gorillaLogo from "../assets/gorilla.svg";
 import hololuxLogo from "../assets/hlx.svg";
+import SectionHeadline from "./SectionHeadline.astro";
+import Paragraph from "./Card/Paragraph.astro";
 ---
 
 <section x-show="$store.showCV">
-  <h2 class="font-medium text-2xl md:text-4xl">Work Places</h2>
-  <p class="text-xl md:text-2xl mt-4 !leading-relaxed text-pretty">
+  <SectionHeadline>Work Places</SectionHeadline>
+  <Paragraph>
     These are the stations where my career took me so far, call it a CV<br />
     ...at the bottom of the website.
-  </p>
+  </Paragraph>
 
   <ul
     class="bg-gray-800 flex flex-col rounded-md mt-8 divide-y divide-gray-700 px-4 sm:px-8"
