@@ -1,0 +1,18 @@
+@layer components {
+  .fancy-ass-label {
+    @apply bg-brawn-red;
+    @apply text-brawn-white;
+    @apply px-2;
+    @apply py-1;
+    @apply md:py-2;
+    @apply rounded;
+    @apply -rotate-1;
+    @apply inline-block;
+    @apply font-bold;
+  }
+
+  .fancy-ass-label.gimmie-yellow {
+    @apply bg-brawn-yellow;
+    @apply text-brawn-gray;
+  }
+}
