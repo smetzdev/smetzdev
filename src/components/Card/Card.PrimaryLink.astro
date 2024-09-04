@@ -1,8 +1,8 @@
 ---
 import ButtonLink from "../ButtonLink.astro";
-const { href } = Astro.props;
+const { class: className, href } = Astro.props;
 ---
 
-<ButtonLink href={href}>
+<ButtonLink href={href} class={className}>
   <slot />
 </ButtonLink>

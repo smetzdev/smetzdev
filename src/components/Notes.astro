@@ -24,7 +24,7 @@ const notes = await getCollection("notes");
         <Card>
           <CardTitle>{data.title}</CardTitle>
           <CardContent>{data.description}</CardContent>
-          <CardPrimaryLink href={data.href} slot="links">
+          <CardPrimaryLink class="ml-auto" href={data.href} slot="links">
             Read more
           </CardPrimaryLink>
         </Card>
