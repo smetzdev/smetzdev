@@ -7,10 +7,4 @@
   a:hover {
     @apply text-brawn-red;
   }
-
-  body {
-    background-image: url("../assets/grunge.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-  }
 }
