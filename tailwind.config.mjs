@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindPluginTypography from "@tailwindcss/typography";
+
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
@@ -14,5 +16,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindPluginTypography],
 };
