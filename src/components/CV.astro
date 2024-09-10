@@ -69,3 +69,12 @@ import suatmm from "../assets/suatmm.jpg";
     />
   </ul>
 </section>
+
+<script>
+  document.addEventListener("alpine:init", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const showCV = urlParams.has("showCV");
+    // @ts-ignore
+    Alpine.store("showCV", showCV);
+  });
+</script>

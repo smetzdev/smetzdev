@@ -1,41 +1,17 @@
 ---
 import "../styles/tailwind.css";
+import Page from "../components/Page.astro";
 import Intro from "../components/Intro.astro";
 import Projects from "../components/Projects.astro";
 import Notes from "../components/Notes.astro";
 import CV from "../components/CV.astro";
-import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Hello @smetz.dev</title>
-    <meta
-      name="description"
-      content="Making things appear in your browser since 2012"
-    />
-    <script>
-      document.addEventListener("alpine:init", () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const showCV = urlParams.has("showCV");
-        // @ts-ignore
-        Alpine.store("showCV", showCV);
-      });
-    </script>
-  </head>
-  <body
-    class="bg-brawn-black text-brawn-white selection:bg-brawn-yellow selection:text-brawn-black md:bg-[url('../assets/grunge.jpg')] md:bg-cover md:bg-fixed"
-  >
-    <main class="max-w-4xl mx-auto p-8 space-y-24" x-data>
-      <Intro />
-      <Projects />
-      <Notes />
-      <CV />
-    </main>
-    <Footer />
-  </body>
-</html>
+<Page title="Hello @smetz.dev">
+  <main class="max-w-4xl mx-auto p-8 space-y-24" x-data>
+    <Intro />
+    <Projects />
+    <Notes />
+    <CV />
+  </main>
+</Page>
