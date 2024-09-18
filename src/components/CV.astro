@@ -7,28 +7,13 @@ import gorillaLogo from "../assets/gorilla.svg";
 import hololuxLogo from "../assets/hlx.svg";
 import SectionHeadline from "./SectionHeadline.astro";
 import Paragraph from "./Card/Paragraph.astro";
-import { Image } from "astro:assets";
-import suatmm from "../assets/suatmm.jpg";
 ---
 
-<section x-show="$store.showCV" x-data="{showSuatmm:false}">
+<section>
   <SectionHeadline>Work Places</SectionHeadline>
   <Paragraph>
-    These are the stations where my career took me so far, call it a CV.<br />
-    If you want to grow this list – just <a
-      href="mailto:hello@smetz.dev?subject=Shut up and take my money!"
-      @click="showSuatmm = true"
-    >
-      Send a Mail
-    </a>🤓
+    These are the stations where my career took me so far.
   </Paragraph>
-  <div
-    class="bg-brawn-yellow p-2 mt-2"
-    x-show="showSuatmm"
-    @mouseover="showSuatmm = false"
-  >
-    <Image src={suatmm} alt="shut up and take my money" />
-  </div>
   <ul
     class="bg-gray-800 flex flex-col rounded-md mt-8 divide-y divide-gray-700 px-4 sm:px-8"
   >
@@ -69,12 +54,3 @@ import suatmm from "../assets/suatmm.jpg";
     />
   </ul>
 </section>
-
-<script>
-  document.addEventListener("alpine:init", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const showCV = urlParams.has("showCV");
-    // @ts-ignore
-    Alpine.store("showCV", showCV);
-  });
-</script>
