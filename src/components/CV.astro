@@ -1,5 +1,6 @@
 ---
 import Workplace from "./Workplace.astro";
+import pocketRocketLogo from "../assets/pocket-rocket.jpeg";
 import browsaarLogo from "../assets/browsaar.svg";
 import raum3Logo from "../assets/r3.svg";
 import azuryLogo from "../assets/azury.svg";
@@ -18,18 +19,11 @@ import Paragraph from "./Card/Paragraph.astro";
     class="bg-gray-800 flex flex-col rounded-md mt-8 divide-y divide-gray-700 px-4 sm:px-8"
   >
     <Workplace
-      company="Gorilla"
-      companyLink="https://gorilla.build/"
-      logo={gorillaLogo}
-      job="Software Engineer"
-      yearsActive="2021 - today"
-    />
-    <Workplace
-      company="Holoux"
-      companyLink="https://hololux.de/"
-      logo={hololuxLogo}
-      job="Fullstack Web Developer"
-      yearsActive="2023 - today"
+      company="Pocket Rocket"
+      companyLink="https://pocket-rocket.io/"
+      logo={pocketRocketLogo}
+      job="Full Stack Developer"
+      yearsActive="2024 - today"
     />
     <Workplace
       company="Browsaar"
@@ -39,10 +33,24 @@ import Paragraph from "./Card/Paragraph.astro";
       yearsActive="2023 - today"
     />
     <Workplace
+      company="Gorilla"
+      companyLink="https://gorilla.build/"
+      logo={gorillaLogo}
+      job="Software Engineer"
+      yearsActive="2021 - 2024"
+    />
+    <Workplace
+      company="Holoux"
+      companyLink="https://hololux.de/"
+      logo={hololuxLogo}
+      job="Full Stack Developer"
+      yearsActive="2023 - 2024"
+    />
+    <Workplace
       company="Azury Living"
       companyLink="https://azury.de/"
       logo={azuryLogo}
-      job="Fullstack Web Developer"
+      job="Full Stack Developer"
       yearsActive="2020 - 2023"
     />
     <Workplace
