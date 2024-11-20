@@ -3,15 +3,13 @@ import "../styles/tailwind.css";
 import Page from "../components/Page.astro";
 import Intro from "../components/Intro.astro";
 import Projects from "../components/Projects.astro";
-import Notes from "../components/Notes.astro";
 import CV from "../components/CV.astro";
 ---
 
 <Page title="Hello @smetz.dev">
-  <main class="max-w-4xl mx-auto p-8 space-y-24" x-data>
+  <main class="max-w-4xl mx-auto max-lg:p-8 space-y-24" x-data>
     <Intro />
     <Projects />
-    <!-- <Notes /> -->
     <CV />
   </main>
 </Page>

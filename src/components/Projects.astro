@@ -24,12 +24,15 @@ const projects = await getCollection("projects");
               slot="links"
               href={data.designerLink}
             >
-              <span slot="label">Design:</span>
+              <span slot="label">
+                <span class="sr-only">Design:</span>
+                <span class="text-xl">🧑‍🎨</span>
+              </span>
               {data.designerName}
             </CardSecondaryLink>
           )}
           <CardPrimaryLink href={data.href} slot="links">
-            Go to Project
+            See more
           </CardPrimaryLink>
         </Card>
       ))
