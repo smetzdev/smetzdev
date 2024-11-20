@@ -1,4 +1,8 @@
 @layer components {
+  .grungy {
+    mask-image: url("/grunge.png");
+  }
+
   .fancy-ass-label {
     @apply bg-brawn-red;
     @apply text-brawn-white;
@@ -9,6 +13,7 @@
     @apply -rotate-1;
     @apply inline-block;
     @apply font-bold;
+    @apply grungy;
   }
 
   .fancy-ass-label.gimmie-yellow {
