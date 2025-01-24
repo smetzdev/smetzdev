@@ -1,13 +1,10 @@
 # Yet another Web Developer...
 
 Hey there!👋
-I’m Sascha, based in Saarbrücken, Germany .
+I’m Sascha, based in Saarbrücken, Germany
+and I make things appear in your browser.
 
-I started building websites back in 2012 and consider myself a professional since 2015. I've spent my first years building WordPress sites, today i work on many different projects, at the moment mainly at Gorilla.
-
-I am open for new projects, so if you need help with your website or want to build the next big thing feel free to Send me a message.
-
-You can find me here (if you wanna):
+I started building websites in 2012 and consider myself a professional since 2015. I've spent my first years building WordPress sites, nowadays i work on many different projects, mainly at Pocket Rocket.
 
 <div id="badges">
   <a href="mailto:hello@smetz.dev">
