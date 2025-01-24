@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 const { class: className } = Astro.props;
 const styles = twMerge(
-  "text-xl md:text-2xl mt-4 !leading-relaxed text-pretty",
+  "text-xl md:text-2xl mt-4 leading-relaxed! text-pretty",
   className
 );
 ---
