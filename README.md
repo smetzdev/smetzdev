@@ -1,5 +1,7 @@
 # Yet another Web Developer...
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2e308ca0-9573-435b-83d0-b3736f8b6102/deploy-status)](https://app.netlify.com/sites/smetzdev-astro/deploys)
+
 Hey there!👋
 I’m Sascha, based in Saarbrücken, Germany
 and I make things appear in your browser.
@@ -14,3 +16,7 @@ I started building websites in 2012 and consider myself a professional since 201
     <img src="https://img.shields.io/badge/Web-green?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Web"/>
   </a>
 </div>
+
+
+
+
