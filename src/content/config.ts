@@ -5,6 +5,7 @@ const projectCollection = defineCollection({
   type: "data",
   schema: z.object({
     title: z.string(),
+    atCompany: z.string().optional(),
     description: z.string(),
     href: z.string(),
     designerName: z.string().optional(),

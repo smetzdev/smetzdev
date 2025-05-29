@@ -11,12 +11,19 @@ const projects = await getCollection("projects");
 ---
 
 <section>
-  <SectionHeadline>Recent Projects</SectionHeadline>
+  <SectionHeadline>Projects Showcase</SectionHeadline>
   <ul class="grid gap-4 mt-8 lg:grid-cols-2 xl:gap-6">
     {
       projects.map(({ data }) => (
         <Card>
-          <CardTitle>{data.title}</CardTitle>
+          <CardTitle>
+            <div class="flex flex-col">
+              {data.atCompany && (
+                <span class="text-sm text-brawn-red">{data.atCompany}</span>
+              )}
+              <span>{data.title}</span>
+            </div>
+          </CardTitle>
           <CardContent>{data.description}</CardContent>
           {data.designerName && (
             <CardSecondaryLink
