@@ -15,7 +15,7 @@
   --color-brawn-yellow: #b8fd6e;
   --color-brawn-black: #142127;
   --color-brawn-red: #bd2e40;
-  --font-heading: "PixelSerif", monospace;
+  --font-pixel: "PixelSerif", monospace;
 }
 
 /*
@@ -46,7 +46,7 @@
 
   h1,
   h2 {
-    font-family: var(--font-heading);
+    font-family: var(--font-pixel);
   }
 }
 
@@ -57,18 +57,21 @@
 @utility fancy-ass-label {
   @apply bg-brawn-red;
   @apply text-brawn-white;
-  @apply px-2;
+  @apply px-3;
   @apply py-1;
   @apply md:py-2;
-  @apply rounded-sm;
-  @apply -rotate-1;
   @apply inline-block;
   @apply font-bold;
-  @apply grungy;
+  border-radius: 0;
+  border: 2px solid var(--color-brawn-black);
+  box-shadow: 4px 4px 0 var(--color-brawn-black);
+  font-family: var(--font-pixel);
+  letter-spacing: 0.04em;
 
   &.gimmie-yellow {
     @apply bg-brawn-yellow;
     @apply text-brawn-gray;
+    box-shadow: 4px 4px 0 var(--color-brawn-black);
   }
 }
 
