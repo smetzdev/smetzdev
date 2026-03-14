@@ -45,13 +45,24 @@
   }
 
   h1,
-  h2 {
-    font-family: var(--font-pixel);
+  h2,
+  h3 {
+    @apply uppercase;
   }
 }
 
 @utility grungy {
   mask-image: url("/grunge.png");
+}
+
+@utility pixel-bg {
+  background-color: var(--color-brawn-black);
+  background-image: radial-gradient(
+    circle,
+    var(--color-brawn-gray) 1px,
+    transparent 1px
+  );
+  background-size: 6px 6px;
 }
 
 @utility fancy-ass-label {
