@@ -1,8 +1,10 @@
 // 1. Import utilities from `astro:content`
-import { z, defineCollection } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "zod";
+import { glob } from "astro/loaders";
 // 2. Define your collection(s)
 const projectCollection = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/projects" }),
   schema: z.object({
     title: z.string(),
     atCompany: z.string().optional(),
@@ -14,7 +16,7 @@ const projectCollection = defineCollection({
 });
 
 const notesCollection = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/notes" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
