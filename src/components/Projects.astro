@@ -31,10 +31,7 @@ const projects = await getCollection("projects");
               slot="links"
               href={data.designerLink}
             >
-              <span slot="label">
-                <span class="sr-only">Design:</span>
-                <span class="text-xl">🧑‍🎨</span>
-              </span>
+              <span slot="label">Design:</span>
               {data.designerName}
             </CardSecondaryLink>
           )}
