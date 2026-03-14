@@ -35,6 +35,10 @@
     border-color: var(--color-gray-200, currentColor);
   }
 
+  html {
+    font-size: 20px;
+  }
+
   a {
     @apply transition-colors;
     @apply text-brawn-yellow;
@@ -65,6 +69,30 @@
   background-size: 6px 6px;
 }
 
+@utility pixel-shadow {
+  box-shadow: 4px 4px 0 var(--color-brawn-black);
+}
+
+/* Dot overlay for dark-bg elements (cards, red labels) */
+@utility pixel-dots-dark {
+  background-image: radial-gradient(
+    circle,
+    var(--color-brawn-black) 1px,
+    transparent 1px
+  );
+  background-size: 6px 6px;
+}
+
+/* Dot overlay for light-bg elements (yellow button, footer) */
+@utility pixel-dots-light {
+  background-image: radial-gradient(
+    circle,
+    rgba(20, 33, 39, 0.25) 1px,
+    transparent 1px
+  );
+  background-size: 6px 6px;
+}
+
 @utility fancy-ass-label {
   @apply bg-brawn-red;
   @apply text-brawn-white;
@@ -78,11 +106,22 @@
   box-shadow: 4px 4px 0 var(--color-brawn-black);
   font-family: var(--font-pixel);
   letter-spacing: 0.04em;
+  background-image: radial-gradient(
+    circle,
+    rgba(20, 33, 39, 0.35) 1px,
+    transparent 1px
+  );
+  background-size: 6px 6px;
 
   &.gimmie-yellow {
     @apply bg-brawn-yellow;
     @apply text-brawn-gray;
     box-shadow: 4px 4px 0 var(--color-brawn-black);
+    background-image: radial-gradient(
+      circle,
+      rgba(20, 33, 39, 0.2) 1px,
+      transparent 1px
+    );
   }
 }
 
