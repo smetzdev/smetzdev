@@ -40,7 +40,6 @@
   }
 
   a {
-    @apply transition-colors;
     @apply text-brawn-yellow;
   }
 
