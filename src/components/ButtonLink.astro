@@ -1,13 +1,14 @@
 ---
 import { twMerge } from "tailwind-merge";
-const { class: className, href } = Astro.props;
+const { class: className, href, target = "_blank" } = Astro.props;
 const styles = twMerge(
   "bg-brawn-yellow pixel-dots-light text-brawn-gray text-center px-4 py-2 inline-block",
   "hover:bg-brawn-red hover:text-brawn-white font-pixel font-bold uppercase",
   className,
 );
+const rel = target === "_blank" ? "noopener noreferrer" : undefined;
 ---
 
-<a class={styles} target="_blank" href={href}>
+<a class={styles} target={target} rel={rel} href={href}>
   <slot />
 </a>

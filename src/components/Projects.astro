@@ -3,14 +3,14 @@ import { getCollection } from "astro:content";
 import Card from "./Card/Card.astro";
 import CardTitle from "./Card/Card.Title.astro";
 import CardContent from "./Card/Card.Content.astro";
-import CardPrimaryLink from "./Card/Card.PrimaryLink.astro";
+import ButtonLink from "./ButtonLink.astro";
 import CardSecondaryLink from "./Card/Card.SecondaryLink.astro";
 import SectionHeadline from "./SectionHeadline.astro";
 
 const projects = await getCollection("projects");
 ---
 
-<section>
+<section style="content-visibility: auto; contain-intrinsic-size: auto 600px;">
   <SectionHeadline>Projects Showcase</SectionHeadline>
   <ul class="grid gap-4 mt-8 lg:grid-cols-2 xl:gap-6">
     {
@@ -27,7 +27,6 @@ const projects = await getCollection("projects");
           <CardContent>{data.description}</CardContent>
           {data.designerName && (
             <CardSecondaryLink
-              title="Design:"
               slot="links"
               href={data.designerLink}
             >
@@ -35,9 +34,9 @@ const projects = await getCollection("projects");
               {data.designerName}
             </CardSecondaryLink>
           )}
-          <CardPrimaryLink href={data.href} slot="links">
+          <ButtonLink href={data.href} slot="links">
             See more
-          </CardPrimaryLink>
+          </ButtonLink>
         </Card>
       ))
     }

@@ -3,10 +3,12 @@
 
 @font-face {
   font-family: "PixelSerif";
-  src: url("/fonts/PixelSerif_16px_v02.otf") format("opentype");
+  src: url("/fonts/PixelSerif_16px_v02.woff2") format("woff2"),
+       url("/fonts/PixelSerif_16px_v02.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0020-00FF, U+0100-017E;
 }
 
 @theme {
@@ -52,10 +54,21 @@
   h3 {
     @apply uppercase;
   }
-}
 
-@utility grungy {
-  mask-image: url("/grunge.png");
+  :focus-visible {
+    outline: 2px solid var(--color-brawn-yellow);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
 
 @utility pixel-bg {
@@ -86,7 +99,7 @@
 @utility pixel-dots-light {
   background-image: radial-gradient(
     circle,
-    rgba(20, 33, 39, 0.25) 1px,
+    color-mix(in srgb, var(--color-brawn-black) 25%, transparent) 1px,
     transparent 1px
   );
   background-size: 6px 6px;
@@ -107,7 +120,7 @@
   letter-spacing: 0.04em;
   background-image: radial-gradient(
     circle,
-    rgba(20, 33, 39, 0.35) 1px,
+    color-mix(in srgb, var(--color-brawn-black) 35%, transparent) 1px,
     transparent 1px
   );
   background-size: 6px 6px;
@@ -115,10 +128,9 @@
   &.gimmie-yellow {
     @apply bg-brawn-yellow;
     @apply text-brawn-gray;
-    box-shadow: 4px 4px 0 var(--color-brawn-black);
     background-image: radial-gradient(
       circle,
-      rgba(20, 33, 39, 0.2) 1px,
+      color-mix(in srgb, var(--color-brawn-black) 20%, transparent) 1px,
       transparent 1px
     );
   }

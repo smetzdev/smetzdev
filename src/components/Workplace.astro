@@ -7,16 +7,17 @@ const { company, job, yearsActive, companyLink, logo } = Astro.props;
   <div class="sm:flex sm:items-center sm:space-x-4">
     <Image
       width={80}
-      height="80"
+      height={80}
       src={logo}
       alt={company}
       class="w-12 h-12 max-sm:hidden"
+      loading="lazy"
     />
     <header>
       <h3 class="sm:text-xl md:font-medium">
-        <a target="_blank" href={companyLink}>{company}</a>
+        <a target="_blank" rel="noopener noreferrer" href={companyLink}>{company}</a>
       </h3>
-      <p class="mt-1 text-gray-400 text-sm sm:text-base">{job}</p>
+      <p class="mt-1 text-brawn-white/55 text-sm sm:text-base">{job}</p>
     </header>
   </div>
   <span class="text-sm sm:text-base">{yearsActive}</span>
